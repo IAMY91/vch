@@ -1,183 +1,146 @@
-'use client';
+import ContactForm from '@/components/website/ContactForm';
+import Footer from '@/components/website/Footer';
+import Header from '@/components/website/Header';
+import OrbitMark from '@/components/website/OrbitMark';
 
-import { useEffect, useMemo, useState } from 'react';
-import CircleRoom from '@/components/circle/CircleRoom';
-import { CentralElement, Theme } from '@/types';
-
-type Stage = 'login' | 'landing' | 'join' | 'room';
-
-const PALETTES: { id: Theme; colors: string[]; label: string }[] = [
-  { id: 'water', label: 'Water', colors: ['#22d3ee', '#38bdf8', '#818cf8', '#a78bfa', '#c084fc'] },
-  { id: 'forest', label: 'Forest', colors: ['#22c55e', '#4ade80', '#84cc16', '#65a30d', '#166534'] },
-  { id: 'rose', label: 'Rose', colors: ['#fb7185', '#f472b6', '#ec4899', '#db2777', '#be185d'] },
-  { id: 'midnight', label: 'Midnight', colors: ['#6366f1', '#818cf8', '#a5b4fc', '#4338ca', '#1e1b4b'] },
-];
-
-const SYMBOLS: { symbol: string; central: CentralElement; label: string }[] = [
-  { symbol: '🔥', central: 'fire', label: 'Fire focus' },
-  { symbol: '🕯️', central: 'candle', label: 'Candle focus' },
-  { symbol: '🌿', central: 'altar', label: 'Altar focus' },
-];
+const perspectives = [
+  ['01', 'Speaking', 'Ideas that open a room', 'Keynotes, panels, interviews, and moderated conversations that make complexity accessible and leave space for genuine exchange.', '#speaking'],
+  ['02', 'Science', 'Evidence with a wider horizon', 'Scientific work, research communication, and interdisciplinary inquiry—ideas tested in the world, then translated with care.', '#science'],
+  ['03', 'Circles', 'Conversation with depth', 'Facilitated spaces built around attention, trust, and participation, because attention changes the quality of a room.', '#circles'],
+  ['04', 'Field notes', 'Learning across borders', 'Observations shaped by people, places, and unfamiliar perspectives—held as questions rather than easy conclusions.', '#field-notes'],
+] as const;
 
 export default function Home() {
-  const [stage, setStage] = useState<Stage>('login');
-  const [name, setName] = useState('');
-  const [spaceId, setSpaceId] = useState(`circle-${Math.random().toString(36).slice(2, 7)}`);
-  const [micOn, setMicOn] = useState(true);
-  const [cameraOn, setCameraOn] = useState(true);
-  const [theme, setTheme] = useState<Theme>('water');
-  const [symbol, setSymbol] = useState<string>('🔥');
-  const [centralElement, setCentralElement] = useState<CentralElement>('fire');
-  const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const invitedSpace = params.get('space');
-    if (invitedSpace) {
-      setSpaceId(invitedSpace);
-      setStage('join');
-    }
-  }, []);
-
-  const inviteLink = useMemo(() => {
-    if (typeof window === 'undefined') return '';
-    return `${window.location.origin}/?space=${spaceId}`;
-  }, [spaceId]);
-
-  const copyLink = async () => {
-    await navigator.clipboard.writeText(inviteLink);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1800);
-  };
-
-  const openRoom = () => {
-    window.history.replaceState({}, '', `/?space=${spaceId}`);
-    setStage('room');
-  };
-
-  if (stage === 'room') {
-    return (
-      <CircleRoom
-        localName={name || 'Guest'}
-        initialMicOn={micOn}
-        initialCameraOn={cameraOn}
-        spaceId={spaceId}
-        initialTheme={theme}
-        initialCentralElement={centralElement}
-        symbol={symbol}
-      />
-    );
-  }
-
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-fuchsia-950 text-stone-100 p-6 md:p-10 flex items-center justify-center">
-      <div className="w-full max-w-4xl rounded-3xl border border-white/10 backdrop-blur-md bg-black/25 p-6 md:p-10 shadow-2xl">
-        <div className="mb-8">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-cyan-300/80 mb-3">
-            <span>{symbol}</span>
-            <span>Circle Live</span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            {stage === 'login' && 'Sign in to your Circle'}
-            {stage === 'landing' && 'Prepare your landing room'}
-            {stage === 'join' && 'Join the shared circle'}
-          </h1>
-          <p className="text-stone-300 mt-3">
-            {stage === 'join'
-              ? `You were invited to ${spaceId}. Enter your name to join instantly.`
-              : 'Fast setup, smooth entry, and a real shared room experience.'}
-          </p>
-        </div>
-
-        {stage === 'login' && (
-          <div className="space-y-4 max-w-xl">
-            <label className="block">
-              <span className="text-sm text-stone-300">Display name</span>
-              <input value={name} onChange={e => setName(e.target.value)} placeholder="Enter your name" className="mt-2 w-full bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-cyan-400/60" />
-            </label>
-            <button onClick={() => setStage('landing')} disabled={!name.trim()} className="disabled:opacity-50 disabled:cursor-not-allowed bg-cyan-400 hover:bg-cyan-300 text-black px-5 py-3 rounded-xl font-semibold">
-              Continue to landing page
-            </button>
-          </div>
-        )}
-
-        {stage === 'join' && (
-          <div className="space-y-4 max-w-xl">
-            <label className="block">
-              <span className="text-sm text-stone-300">Your name</span>
-              <input value={name} onChange={e => setName(e.target.value)} placeholder="Enter your name" className="mt-2 w-full bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-cyan-400/60" />
-            </label>
-            <button onClick={openRoom} disabled={!name.trim()} className="disabled:opacity-50 disabled:cursor-not-allowed bg-cyan-400 hover:bg-cyan-300 text-black px-5 py-3 rounded-xl font-semibold">
-              Join circle room
-            </button>
-          </div>
-        )}
-
-        {stage === 'landing' && (
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <label className="block">
-                <span className="text-sm text-stone-300">Your name</span>
-                <input value={name} onChange={e => setName(e.target.value)} className="mt-2 w-full bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-400/60" />
-              </label>
-              <label className="block">
-                <span className="text-sm text-stone-300">Space ID</span>
-                <input value={spaceId} onChange={e => setSpaceId(e.target.value)} className="mt-2 w-full bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-fuchsia-400/60" />
-              </label>
-              <div className="flex items-center justify-between bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3">
-                <span>Mic</span>
-                <button onClick={() => setMicOn(v => !v)} className={`px-3 py-1 rounded-full text-sm ${micOn ? 'bg-emerald-500 text-black' : 'bg-stone-700'}`}>{micOn ? 'On' : 'Off'}</button>
-              </div>
-              <div className="flex items-center justify-between bg-stone-900/70 border border-white/10 rounded-xl px-4 py-3">
-                <span>Camera</span>
-                <button onClick={() => setCameraOn(v => !v)} className={`px-3 py-1 rounded-full text-sm ${cameraOn ? 'bg-emerald-500 text-black' : 'bg-stone-700'}`}>{cameraOn ? 'On' : 'Off'}</button>
-              </div>
-              <div className="flex gap-2 items-center">
-                <button onClick={copyLink} className="bg-stone-800 hover:bg-stone-700 px-4 py-3 rounded-xl text-sm">Copy share link</button>
-                {copied && <span className="text-emerald-300 text-sm">Copied ✓</span>}
-                <button onClick={openRoom} className="bg-fuchsia-400 hover:bg-fuchsia-300 text-black px-4 py-3 rounded-xl font-semibold">Open space</button>
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 p-4 bg-black/20 space-y-4">
-              <div>
-                <h2 className="font-semibold mb-2">Landing palette (click to apply)</h2>
-                <div className="space-y-2">
-                  {PALETTES.map(p => (
-                    <button key={p.id} onClick={() => setTheme(p.id)} className={`w-full p-2 rounded-xl border ${theme === p.id ? 'border-cyan-300' : 'border-white/10'}`}>
-                      <div className="flex items-center justify-between text-xs mb-1"><span>{p.label}</span>{theme === p.id && <span>Selected</span>}</div>
-                      <div className="grid grid-cols-5 gap-1">
-                        {p.colors.map(color => <div key={color} className="h-6 rounded-md" style={{ backgroundColor: color }} />)}
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h2 className="font-semibold mb-2">Symbols (click to apply)</h2>
-                <div className="grid grid-cols-3 gap-2">
-                  {SYMBOLS.map(s => (
-                    <button
-                      key={s.symbol}
-                      onClick={() => {
-                        setSymbol(s.symbol);
-                        setCentralElement(s.central);
-                      }}
-                      className={`p-3 rounded-xl border ${symbol === s.symbol ? 'border-cyan-300 bg-cyan-400/10' : 'border-white/10 bg-stone-900/50'}`}
-                    >
-                      <div className="text-2xl">{s.symbol}</div>
-                      <div className="text-xs text-stone-300 mt-1">{s.label}</div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <p className="text-sm text-stone-300 break-all">Invite link: {inviteLink}</p>
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Header />
+      <main id="main">
+        <section className="hero" id="home" aria-labelledby="hero-title">
+          <div className="hero-copy">
+            <p className="eyebrow">Scientist · Speaker · Circle Leader · Traveler</p>
+            <h1 id="hero-title">Where science meets <em>human connection.</em></h1>
+            <p className="hero-lede">Verena Claudia Haage brings research, courageous conversation, and a global perspective into rooms where people are ready to think deeply—and move forward together.</p>
+            <div className="button-row">
+              <a className="button button-primary" href="#contact">Invite Verena to speak <span aria-hidden="true">↗</span></a>
+              <a className="text-link" href="#about">Explore her work <span aria-hidden="true">↓</span></a>
             </div>
           </div>
-        )}
-      </div>
-    </main>
+          <div className="hero-visual" aria-hidden="true">
+            <OrbitMark />
+            <p className="visual-note"><span>Observation 01</span> Inquiry becomes meaningful<br />when it is shared.</p>
+          </div>
+          <p className="hero-index" aria-hidden="true">01 — 08</p>
+        </section>
+
+        <section className="intro ruled-section" id="about" aria-labelledby="about-title">
+          <p className="section-label">01 / About</p>
+          <div className="intro-copy">
+            <h2 id="about-title">Rigorous thinking.<br /><em>Human spaces.</em></h2>
+            <p className="large-copy">Trained as a scientist and shaped by encounters across disciplines, communities, and borders, Verena works at the intersection of knowledge and lived experience. On stage, in institutions, and in circles, she makes complexity accessible without making it small.</p>
+            <p>Her practice begins with a simple premise: meaningful questions deserve both evidence and attention. She gathers different perspectives without smoothing away what makes them distinct.</p>
+            <div className="resource-row" aria-label="Biography downloads">
+              <span>Verified biography files</span>
+              <span className="status">Unpublished pending source approval</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="perspectives" aria-labelledby="expertise-title">
+          <div className="section-heading">
+            <p className="section-label">02 / Practice</p>
+            <h2 id="expertise-title">One practice, <em>four perspectives</em></h2>
+          </div>
+          <div className="card-grid">
+            {perspectives.map(([number, label, title, copy, href]) => (
+              <a className="perspective-card" href={href} key={number}>
+                <span className="card-number">{number}</span>
+                <span className="card-label">{label}</span>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+                <span className="card-arrow" aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section className="speaking dark-section" id="speaking" aria-labelledby="speaking-title">
+          <div>
+            <p className="section-label light">03 / Speaking and Keynotes</p>
+            <h2 id="speaking-title">Bring depth, clarity, and <em>genuine presence</em> to the conversation.</h2>
+          </div>
+          <div className="speaking-copy">
+            <p>Verena designs contributions for the people in the room—not a generic performance delivered at them. Formats may include keynotes, fireside conversations, workshops, panels, circle-based sessions, interviews, and advisory exchanges.</p>
+            <ul className="format-list" aria-label="Speaking formats">
+              <li><span>01</span> Keynotes &amp; talks</li><li><span>02</span> Panels &amp; interviews</li>
+              <li><span>03</span> Moderated conversations</li><li><span>04</span> Participatory workshops</li>
+            </ul>
+            <a className="button button-light" href="#contact">Discuss an event <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section className="split-section" id="science" aria-labelledby="science-title">
+          <p className="section-label">04 / Scientific Research and Publications</p>
+          <div>
+            <h2 id="science-title">Evidence, translated <em>with care.</em></h2>
+            <p className="large-copy">Research summaries, specialist topics, selected publications, and projects will be published only after each claim has been checked against primary records.</p>
+            <div className="proof-panel">
+              <p className="eyebrow">Selected work and recognition</p>
+              <h3>Proof belongs in the open.</h3>
+              <p>Verified institutions, publications, talks, media appearances, and collaborations will appear here.</p>
+              <span className="status">Currently unpublished</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="circles sand-section" id="circles" aria-labelledby="circles-title">
+          <div className="rings-small" aria-hidden="true"><i /><i /><i /></div>
+          <p className="section-label">05 / Circle Facilitation and Workshops</p>
+          <div className="narrow-copy">
+            <h2 id="circles-title">Gather around a <em>meaningful question.</em></h2>
+            <p>Circle practice is a structured invitation to listen, contribute, and notice what a faster format misses. It is suited to groups willing to participate with care—not therapy, crisis support, or a substitute for professional clinical care.</p>
+            <p>Sessions are shaped around context, purpose, group size, access needs, and clear agreements. Possible formats and boundaries are discussed before any engagement.</p>
+            <a className="button button-primary" href="#contact">Plan a circle <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section className="journal" id="field-notes" aria-labelledby="journal-title">
+          <div className="section-heading">
+            <p className="section-label">06 / Field Notes</p>
+            <h2 id="journal-title"><em>Field Notes</em> from the Future</h2>
+            <p>An editorial home for research in plain language, travel observations, post-talk reflections, bounded circle practices, short explainers, reading notes, and conversations.</p>
+          </div>
+          <div className="journal-empty">
+            <span className="observation-mark">+</span>
+            <div><p className="eyebrow">Editorial archive</p><h3>The notebook is being prepared.</h3><p>Entries will appear with durable links, dates, authorship, social previews, and related reading. No draft material is presented as published work.</p></div>
+          </div>
+          <div className="newsletter">
+            <div><label htmlFor="newsletter-email">Occasional Field Notes</label><p>Low-frequency dispatches. Your address is used only for this request and is never sold.</p></div>
+            <input id="newsletter-email" name="email" type="email" autoComplete="email" placeholder="Signup opening soon" disabled />
+            <button type="button" disabled>Unpublished</button>
+          </div>
+        </section>
+
+        <section className="media ruled-section" id="media" aria-labelledby="media-title">
+          <p className="section-label">07 / Media and Interview Enquiries</p>
+          <div>
+            <h2 id="media-title">A clear voice for <em>complex conversations.</em></h2>
+            <p className="large-copy">Approved photography, interview topics, press mentions, recordings, biographies, and downloadable press assets will live here once verified and cleared for publication.</p>
+            <div className="resource-row"><span>Speaker sheet &amp; press kit</span><span className="status">Unpublished pending approval</span></div>
+            <a className="text-link" href="#contact">Request the speaker sheet <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section className="contact dark-section" id="contact" aria-labelledby="contact-title">
+          <div>
+            <p className="section-label light">08 / Contact</p>
+            <h2 id="contact-title">What conversation <em>could we begin?</em></h2>
+            <p>For speaking, facilitation, interviews, collaborations, and advisory work, share a little about your audience, purpose, location, and timing.</p>
+          </div>
+          <ContactForm />
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }

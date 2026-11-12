@@ -1,35 +1,29 @@
 # Development
 
-Use the existing `/workspace/VCH` checkout. Cloud tasks are already isolated;
-there is no need to create another worktree.
-
-Validated toolchain: Node.js 24.22.1 and npm 11.9.0.
+Next.js App Router / React / TypeScript. The personal website is statically exported to `out/`; no database or secret is required.
 
 ```sh
-cd /workspace/VCH
-npm ci --cache /workspace/.npm --no-audit --no-fund
-npm run lint
-NEXT_TELEMETRY_DISABLED=1 npm run build
-npm run dev -- --hostname 127.0.0.1 --port 3000
+npm ci
+npm run dev
+npm run build
 ```
 
-Keep the development server in a managed terminal session. Validate a full local
-GET request and the returned page content, rather than relying on an open port.
-For production-mode validation, stop the development server, build, then use
-`npm run start -- --hostname 127.0.0.1 --port 3000`.
-Do not run `next build` while the development server writes to the same `.next`.
+The dev adapter in `scripts/dev.mjs` also accepts managed-preview `--host` and `--strictPort` flags. Build before publishing; `out/` is generated and ignored. The preserved circle-room prototype is not mounted on the personal website.
 
-The application currently requires no external services or secrets. Optional
-public deployment settings are described in [content-research.md](content-research.md).
+The Sites project identity is tracked in `.openai/hosting.json`. The original GitHub repository remains IAMY91/vch. Vercel can use the Next.js preset; Sites serves the static export. Override `NEXT_PUBLIC_SITE_URL` when using a custom domain so canonical links, sitemap and structured data use the correct origin.
 
-Known inherited issues: Next.js 14.2.5 has an npm security advisory, and lint
-reports a cleanup-ref warning in `src/hooks/useSpacePresence.ts:137`. Resolve
-these separately before a public production deployment. No dependency or
-lockfile updates were made as part of environment onboarding.
+## Content maintenance
 
-Validation in this task: frozen-lockfile installation, lint, production build,
-and a real Chromium browser check at desktop (1440px) and mobile (390px) widths.
-The browser check exercised every in-page anchor, the mobile menu, a valid
-contact submission with no configured email, and absence of page exceptions or
-horizontal overflow. The generated social image was requested and verified as
-HTTP 200 / image/png after correcting its flex layout.
+- `src/lib/profileSources.ts`: source registry, publications, appearances, short bio and public professional contact address.
+- `src/app/page.tsx`: editorial narrative and sections.
+- `src/app/sources/page.tsx`: verification context and photo attribution.
+- `public/resources/`: downloadable biography and DOI-negotiated BibTeX references. Keep these consistent with the content registry.
+- `public/images/`: compressed portraits; see Sources & credits for origins.
+
+The contact form opens the visitor's email application and explicitly does not claim a message was sent. Video embeds contact YouTube only after a visitor loads them. No site analytics or third-party fonts are used.
+
+## Validation
+
+A production build includes TypeScript and Next.js lint checks. The inherited unused circle prototype emits one cleanup-ref lint warning in `useSpacePresence.ts`; the website build succeeds. Next.js and matching ESLint config were upgraded from 14.2.5 to 14.2.35.
+
+Browser QA was attempted using managed preview. The initial CLI argument mismatch was repaired by the dev adapter. The browser tool then stalled before opening; desktop/mobile visual and interaction QA remain unverified. Do not describe this as a passed browser check.

@@ -109,6 +109,55 @@ export default function Sources() {
             institutional name implies endorsement.
           </li>
         </ul>
+        <h2>Organization logos & video thumbnail</h2>
+        <p>
+          I use original organization assets to identify my research, initiative
+          and event connections. Their placement describes the relationship
+          labelled alongside each logo.
+        </p>
+        <ul>
+          <li>
+            Charité: original white logo from{" "}
+            <a href="https://www.circadianmedicine.de/people/verena-haage">
+              TRR 418’s institutional footer
+            </a>
+            .
+          </li>
+          <li>
+            SciLead: original logo from{" "}
+            <a href="https://www.scilead.de/">SciLead</a>, shown in the
+            affiliations band and initiative section.
+          </li>
+          <li>
+            Falling Walls Foundation: original{" "}
+            <a href="https://falling-walls.com/themes/custom/falling_walls/logo_fw.svg">
+              website logo
+            </a>
+            .
+          </li>
+          <li>
+            Berlin Science Week: original{" "}
+            <a href="https://berlinscienceweek.com/themes/custom/berlinscienceweek/logo.svg">
+              website logo
+            </a>
+            .
+          </li>
+          <li>
+            eLife: original{" "}
+            <a href="https://elifesciences.org/assets/patterns/img/patterns/organisms/elife-logo-xs.5a3c8c68.svg">
+              website logo
+            </a>
+            .
+          </li>
+          <li>
+            Video thumbnail:{" "}
+            <a href="https://i.ytimg.com/vi/ZRQzm6BKyqo/hqdefault.jpg">
+              original YouTube thumbnail
+            </a>{" "}
+            for the Neuroscience and Beyond interview, hosted locally so the
+            preview does not connect to YouTube.
+          </li>
+        </ul>
         <h2>Presentation material</h2>
         <p>
           No standalone slide deck was verified in the public sources reviewed.
@@ -119,11 +168,8 @@ export default function Sources() {
           Beyond.
         </p>
         <p>
-          For updates, corrections or presentation material, contact{" "}
-          <a href="mailto:verena-claudia.haage@charite.de">
-            verena-claudia.haage@charite.de
-          </a>
-          .
+          For updates, corrections or presentation material, please use{" "}
+          <a href="/#contact">the contact form</a>.
         </p>
         <a className="button button-primary" href="/">
           Return to my work ↗

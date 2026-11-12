@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import ResearchIcon from "./ResearchIcon";
 import { publications } from "@/lib/profileSources";
 const categories = [
   "All work",
@@ -77,7 +78,16 @@ export default function PublicationLibrary() {
         {visible.map((p) => (
           <article className="publication" key={p.doi}>
             <div className="publication-year">
-              {p.year}
+              <ResearchIcon
+                name={
+                  p.category === "Neuroimmunology"
+                    ? "microglia"
+                    : p.category === "Diagnostics"
+                      ? "flask"
+                      : "people"
+                }
+              />
+              <span className="publication-year-number">{p.year}</span>
               <span>{p.category}</span>
             </div>
             <div>

@@ -195,9 +195,28 @@ export default function Home() {
                 SciLead, I turn this question into opportunities to learn,
                 reflect and practise better ways of working together.
               </p>
-              <External href="https://doi.org/10.15252/embr.202153592">
-                Read the leadership study
-              </External>
+              <a
+                className="leadership-study"
+                href="https://doi.org/10.15252/embr.202153592"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ResearchIcon name="book" />
+                <span className="study-link-copy">
+                  <strong>Read the leadership study</strong>
+                  <span>EMBO Reports · Research article</span>
+                </span>
+                <svg
+                  className="study-link-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" />
+                </svg>
+              </a>
             </div>
           </div>
           <div className="leadership-pillars">
@@ -277,16 +296,28 @@ export default function Home() {
               <External href={s.scilead.href}>Discover SciLead</External>
             </div>
           </div>
-          <div className="leadership-evidence">
-            <External href={s.agile.href}>
-              Agile collaboration · BIH workshop
-            </External>
-            <External href={s.glassCeiling.href}>
-              Glass ceilings · GSO panel
-            </External>
-            <External href={s.elifeSurvey.href}>
-              Postdoc departures · eLife survey
-            </External>
+          <div className="leadership-activities">
+            <h3 id="related-activities-title">Other related activities</h3>
+            <ul
+              className="leadership-evidence"
+              aria-labelledby="related-activities-title"
+            >
+              <li>
+                <External href={s.agile.href}>
+                  Agile collaboration · BIH workshop
+                </External>
+              </li>
+              <li>
+                <External href={s.glassCeiling.href}>
+                  Glass ceilings · GSO panel
+                </External>
+              </li>
+              <li>
+                <External href={s.elifeSurvey.href}>
+                  Postdoc departures · eLife survey
+                </External>
+              </li>
+            </ul>
           </div>
         </section>
         <section className="section research-section" id="science">

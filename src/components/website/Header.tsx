@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const links = ['About', 'Speaking', 'Science', 'Circles', 'Field Notes', 'Media', 'Contact'];
+const links = ['About', 'Speaking', 'Science', 'Leadership', 'Media', 'Contact'];
 
 export default function Header() {
   const [open, setOpen] = useState(false);

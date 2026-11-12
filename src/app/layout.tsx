@@ -5,22 +5,22 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Verena Claudia Haage, PhD | Scientist, Speaker & Circle Facilitator',
-  description: 'Verena Claudia Haage is a scientist, speaker, and facilitator connecting rigorous inquiry with human connection. Explore her research, talks, circles, and field notes.',
+  title: 'Verena Claudia Haage, PhD | Academic Leadership & Science Communication',
+  description: 'The personal website of Verena Claudia Haage, PhD. Explore academic leadership, science communication, research, and opportunities for conversation.',
   alternates: { canonical: '/' },
   openGraph: {
-    type: 'profile', url: '/', title: 'Verena Claudia Haage, PhD | Scientist, Speaker & Circle Facilitator',
-    description: 'A scientist, speaker, and facilitator connecting rigorous inquiry with human connection.',
+    type: 'profile', url: '/', title: 'Verena Claudia Haage, PhD | Academic Leadership & Science Communication',
+    description: 'Research, science communication, and conversations about academic leadership.',
     siteName: 'Verena Claudia Haage',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Verena Claudia Haage — where science meets human connection' }],
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Verena Claudia Haage — science with depth, leadership with humanity' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Verena Claudia Haage | Scientist, Speaker & Circle Facilitator', description: 'Where science meets human connection.', images: ['/opengraph-image'] },
-  keywords: ['Verena Claudia Haage', 'scientist and speaker', 'science speaker Germany', 'circle facilitator Berlin', 'research communication speaker', 'scientific leadership facilitator'],
+  twitter: { card: 'summary_large_image', title: 'Verena Claudia Haage | Academic Leadership & Science Communication', description: 'Science with depth. Leadership with humanity.', images: ['/opengraph-image'] },
+  keywords: ['Verena Claudia Haage', 'scientist and speaker', 'academic leadership', 'research communication speaker', 'scientific leadership facilitator'],
 };
 
 const personSchema = {
   '@context': 'https://schema.org', '@type': 'Person', name: 'Verena Claudia Haage', honorificSuffix: 'PhD',
-  description: 'Scientist, speaker, and circle facilitator exploring how knowledge, courage, and human connection create meaningful change.',
+  description: 'A personal platform for academic leadership, science communication, and research.',
   url: siteUrl,
 };
 

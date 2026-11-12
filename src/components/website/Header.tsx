@@ -1,23 +1,52 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const links = [
   ["About", "about"],
   ["Leadership", "leadership"],
   ["Research", "science"],
   ["Speaking", "speaking"],
   ["Media", "media"],
+  ["Resources", "resources"],
 ];
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
+  const header = useRef<HTMLElement>(null);
+  const menuButton = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const close = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape" && open) {
+        setOpen(false);
+        menuButton.current?.focus();
+      }
+    };
+    const outside = (e: PointerEvent) => {
+      if (e.target instanceof Node && !header.current?.contains(e.target))
+        setOpen(false);
     };
     window.addEventListener("keydown", close);
-    return () => window.removeEventListener("keydown", close);
+    document.addEventListener("pointerdown", outside);
+    return () => {
+      window.removeEventListener("keydown", close);
+      document.removeEventListener("pointerdown", outside);
+    };
+  }, [open]);
+  useEffect(() => {
+    const sections = ["home", ...links.map(([, id]) => id), "contact"]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries)
+          if (entry.isIntersecting) setActive(entry.target.id);
+      },
+      { rootMargin: "-18% 0px -60% 0px" },
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
   return (
-    <header className="site-header">
+    <header className="site-header" ref={header}>
       <a
         className="wordmark"
         href="/#home"
@@ -33,6 +62,7 @@ export default function Header() {
         </span>
       </a>
       <button
+        ref={menuButton}
         className="menu-button"
         type="button"
         aria-expanded={open}
@@ -49,12 +79,22 @@ export default function Header() {
         aria-label="Primary navigation"
       >
         {links.map(([label, id]) => (
-          <a key={id} href={`/#${id}`} onClick={() => setOpen(false)}>
+          <a
+            key={id}
+            href={`/#${id}`}
+            aria-current={active === id ? "location" : undefined}
+            onClick={() => setOpen(false)}
+          >
             {label}
           </a>
         ))}
       </nav>
-      <a className="header-cta" href="/#contact" onClick={() => setOpen(false)}>
+      <a
+        className="header-cta"
+        href="/#contact"
+        aria-current={active === "contact" ? "location" : undefined}
+        onClick={() => setOpen(false)}
+      >
         Let’s connect <span aria-hidden="true">↗</span>
       </a>
     </header>

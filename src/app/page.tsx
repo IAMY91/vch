@@ -42,15 +42,17 @@ export default function Home() {
               Verena Claudia Haage<span>, PhD</span>
             </p>
             <p className="hero-lede">
-              Understanding the brain. Reimagining how we work together.
-              Building a culture of science where people and ideas can thrive.
+              I study the brain’s immune cells and help shape a culture of
+              science where people and ideas can thrive. As a researcher and
+              SciLead co-founder, I connect scientific curiosity with more human
+              ways of working.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href="#leadership">
-                Explore her work <span aria-hidden="true">↘</span>
+              <a className="button button-primary" href="#contact">
+                Invite me to speak <span aria-hidden="true">↗</span>
               </a>
-              <a className="text-link" href="#contact">
-                Invite a conversation ↗
+              <a className="text-link" href="#science">
+                Explore my research ↓
               </a>
             </div>
             <div className="hero-footnote">
@@ -68,10 +70,6 @@ export default function Home() {
                 priority
                 sizes="(max-width: 760px) 100vw, 45vw"
               />
-              <span className="portrait-corner" aria-hidden="true">
-                A curious mind.
-                <br />A collective future.
-              </span>
             </div>
             <figcaption>
               Verena Claudia Haage ·{" "}
@@ -91,19 +89,19 @@ export default function Home() {
         </section>
         <div className="context-strip">
           <span>Across research & public dialogue</span>
-          <a href={s.circadianMedicine.href}>
+          <a href={s.circadianMedicine.href} target="_blank" rel="noreferrer">
             Charité <small>Current research</small>
           </a>
-          <a href={s.scilead.href}>
+          <a href={s.scilead.href} target="_blank" rel="noreferrer">
             SciLead <small>Co-founder</small>
           </a>
-          <a href={s.berlinScienceWeek.href}>
+          <a href={s.berlinScienceWeek.href} target="_blank" rel="noreferrer">
             Berlin Science Week <small>2026 speaker</small>
           </a>
-          <a href={s.fallingWalls.href}>
+          <a href={s.fallingWalls.href} target="_blank" rel="noreferrer">
             Falling Walls <small>2023 Press Fellow</small>
           </a>
-          <a href={s.elifeAmbassador.href}>
+          <a href={s.elifeAmbassador.href} target="_blank" rel="noreferrer">
             eLife <small>Community Ambassador</small>
           </a>
         </div>
@@ -124,22 +122,22 @@ export default function Home() {
             </h2>
             <div className="intro-text">
               <p className="large-copy">
-                Verena is a neuroimmunologist who brings the same curiosity to
-                the culture of science that she brings to the brain.
+                I bring the same curiosity to the culture of science that I
+                bring to the brain. How can we understand complex systems—and
+                create the conditions for people to do meaningful work together?
               </p>
               <p>
-                As a senior postdoctoral scientist at ECRC–Charité in Berlin,
-                she studies how circadian rhythms shape immune-cell dynamics in
-                multiple sclerosis. Her work builds on research into human
-                microglia and neurodegeneration, including a postdoctoral
+                I am a senior postdoctoral scientist at ECRC–Charité in Berlin,
+                studying how circadian rhythms shape immune-cell dynamics in
+                multiple sclerosis. My work builds on research into human
+                microglia and neurodegeneration, including my postdoctoral
                 appointment at Columbia University.
               </p>
               <p>
-                Alongside her research, she co-founded SciLead to advance
-                sustainable leadership in academia. Through research, workshops
-                and public dialogue, she connects scientific evidence with the
-                everyday realities of collaboration, mentorship and mental
-                health.
+                I co-founded SciLead to advance sustainable leadership in
+                academia. Through research, workshops and public dialogue, I
+                connect scientific evidence with the everyday realities of
+                collaboration, mentorship and mental health.
               </p>
               <div className="inline-links">
                 <External href={s.circadianMedicine.href}>
@@ -156,8 +154,8 @@ export default function Home() {
               <span>2019</span>
               <h3>Doctorate in Berlin</h3>
               <p>
-                PhD in Medical Neurosciences, Charité. Research on microglial
-                gene signatures.
+                I completed my PhD in Medical Neurosciences at Charité,
+                researching the gene signatures of microglia.
               </p>
               <External href={s.dissertation.href}>Doctoral record</External>
             </div>
@@ -165,8 +163,8 @@ export default function Home() {
               <span>Columbia University</span>
               <h3>A human perspective</h3>
               <p>
-                Postdoctoral research on human microglia and neurodegenerative
-                disease in New York.
+                At Columbia University in New York, I investigated human
+                microglia and their role in neurodegenerative disease.
               </p>
               <External href={s.fallingWalls.href}>2023 profile</External>
             </div>
@@ -174,8 +172,8 @@ export default function Home() {
               <span>Today · Berlin</span>
               <h3>Rhythms & research culture</h3>
               <p>
-                Circadian neuroimmunology at ECRC–Charité, alongside leadership
-                and facilitation with SciLead.
+                Today, I combine circadian neuroimmunology at ECRC–Charité with
+                leadership and facilitation through SciLead.
               </p>
               <External href={s.circadianMedicine.href}>Current work</External>
             </div>
@@ -198,10 +196,10 @@ export default function Home() {
                 same attention as the research itself.
               </p>
               <p>
-                Verena’s first-author study in <i>EMBO Reports</i> examined
-                leadership training in German academia. As a SciLead co-founder,
-                she translates this concern into participatory spaces for
-                learning and collaboration.
+                In our study published in <i>EMBO Reports</i>, my co-authors and
+                I examined leadership training in German academia. Through
+                SciLead, I turn this question into opportunities to learn,
+                reflect and practise better ways of working together.
               </p>
               <External href="https://doi.org/10.15252/embr.202153592">
                 Read the leadership study
@@ -219,8 +217,9 @@ export default function Home() {
                 that can be learned.
               </h3>
               <p>
-                Self-leadership, mentorship and shared responsibility as
-                foundations for a sustainable research culture.
+                I work with self-leadership, mentorship and shared
+                responsibility as foundations for a sustainable research
+                culture.
               </p>
             </article>
             <article>
@@ -233,8 +232,8 @@ export default function Home() {
                 that makes room.
               </h3>
               <p>
-                Agile ways of working, open communication and peer learning for
-                the complexity of science and medicine.
+                I facilitate agile ways of working, open communication and peer
+                learning for the complexity of science and medicine.
               </p>
             </article>
             <article>
@@ -247,8 +246,8 @@ export default function Home() {
                 who can thrive.
               </h3>
               <p>
-                Mental health, resilience and more inclusive communities across
-                academic career stages.
+                I create space to talk about mental health, resilience and
+                inclusion across academic career stages.
               </p>
             </article>
           </div>
@@ -263,9 +262,9 @@ export default function Home() {
             </div>
             <div>
               <p>
-                The Sustainable Leadership for Science Initiative brings
-                together research, workshops and community exchange on the way
-                science is organized and led.
+                With my colleagues at the Sustainable Leadership for Science
+                Initiative, I bring together research, workshops and community
+                exchange to rethink how science is organized and led.
               </p>
               <External href={s.scilead.href}>Discover SciLead</External>
             </div>
@@ -295,9 +294,10 @@ export default function Home() {
                 <em>the brain’s guardians.</em>
               </h2>
               <p className="large-copy">
-                Microglia are the brain’s resident immune cells. Verena
-                investigates their diversity, how they change in disease, and
-                how we can study their function.
+                Microglia are the brain’s resident immune cells. I investigate
+                their diversity, how they change in disease, and how we can
+                understand their function through human data and experimental
+                models.
               </p>
             </div>
             <div className="project-card">
@@ -311,9 +311,10 @@ export default function Home() {
                 changes immunity.
               </h3>
               <p>
-                Circadian rhythms and chronotherapy in multiple sclerosis:
-                investigating daily patterns in immunity, sleep and metabolism,
-                and their relationship to disease.
+                In TRR 418’s B01 project, I investigate circadian rhythms in
+                multiple sclerosis: how daily patterns in immunity, sleep and
+                metabolism relate to disease and potential approaches to
+                treatment.
               </p>
               <External href={s.circadianMedicine.href}>
                 Explore the research project
@@ -331,8 +332,8 @@ export default function Home() {
           </div>
           <PublicationLibrary />
           <p className="research-note">
-            A curated selection of published work, distinct from preprints and
-            conference abstracts. For the wider record, visit{" "}
+            These are selected publications from my research. You can find my
+            wider record, including preprints and conference contributions, on{" "}
             <a href={s.researchGate.href} target="_blank" rel="noreferrer">
               ResearchGate ↗
             </a>
@@ -361,16 +362,17 @@ export default function Home() {
             </h2>
             <div>
               <p className="large-copy">
-                Bringing research, lived academic experience and a facilitator’s
+                I bring research, lived academic experience and a facilitator’s
                 attention into the same room.
               </p>
               <p>
-                Explore documented workshops, panels and interviews, or start a
-                conversation about a keynote, research talk or participatory
-                session for your audience.
+                I contribute to workshops, panels and interviews on science and
+                the way we work. If you are planning a keynote, research talk or
+                participatory session, let’s explore what would be useful for
+                your audience.
               </p>
               <a className="button button-light" href="#contact">
-                Discuss an invitation ↗
+                Invite me to your event ↗
               </a>
             </div>
           </div>
@@ -398,8 +400,8 @@ export default function Home() {
               <em>the lab.</em>
             </h2>
             <p className="large-copy">
-              Making space for the science—and for the questions about how we do
-              it.
+              I share the science behind my work and ask what it takes to build
+              a research culture we want to be part of.
             </p>
           </div>
           <div className="media-grid">
@@ -410,7 +412,10 @@ export default function Home() {
                   Podcast / Neuroscience and Beyond · 2025
                 </span>
                 <h3>The Brain’s Hidden Guardians</h3>
-                <p>Microglia in health and disease, in conversation.</p>
+                <p>
+                  I explore what the brain’s immune cells do in health and
+                  disease.
+                </p>
                 <span>Listen to the episode</span>
               </External>
               <External href={s.culturePodcast.href} className="media-story">
@@ -419,8 +424,8 @@ export default function Home() {
                 </span>
                 <h3>Rethinking the Research Culture</h3>
                 <p>
-                  The challenges of academia and the conditions researchers
-                  need.
+                  I discuss the challenges of academic life and the conditions
+                  researchers need to thrive.
                 </p>
                 <span>Listen to the conversation</span>
               </External>
@@ -430,8 +435,8 @@ export default function Home() {
                 </span>
                 <h3>Starke Frauen für die Wissenschaft</h3>
                 <p>
-                  Visibility, networks and women in science through the Zia
-                  fellowship.
+                  I share my perspective on connection and women’s networks as
+                  part of the Zia fellowship community.
                 </p>
                 <span>Read the German feature</span>
               </External>
@@ -462,14 +467,14 @@ export default function Home() {
               <em>Space to belong.</em>
             </h2>
             <p className="large-copy">
-              Beyond the lab and the conference stage, Verena creates spaces for
+              Beyond the lab and the conference stage, I create spaces for
               connection.
             </p>
             <p>
-              A trained Wild Woman Project circle facilitator in Berlin, she
-              brings together her love of nature, community and exploration.
-              This community practice sits alongside her scientific work and her
-              commitment to more human ways of coming together.
+              As a trained Wild Woman Project circle facilitator in Berlin, I
+              bring together my love of nature, community and exploration.
+              Alongside my scientific work, this is another way I practise
+              listening and create room for people to meet as they are.
             </p>
             <div className="inline-links">
               <External href={s.wildWoman.href}>
@@ -493,7 +498,9 @@ export default function Home() {
                 <br />
                 <em>introduction.</em>
               </h2>
-              <p>Biography, publications and source material in one place.</p>
+              <p>
+                My biography, publications and source material in one place.
+              </p>
             </div>
             <div>
               <details open>
@@ -515,8 +522,8 @@ export default function Home() {
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  Read the selected papers above, export citations, or explore
-                  the original doctoral dissertation.
+                  Read my selected papers, export citations, or explore my
+                  doctoral dissertation.
                 </p>
                 <div className="inline-links">
                   <a href="/resources/selected-publications.bib" download>
@@ -534,8 +541,8 @@ export default function Home() {
                 </summary>
                 <p>
                   Event programmes and related reading are linked in the
-                  speaking archive. For presentation slides or materials for a
-                  specific session, please contact Verena.
+                  speaking archive. For slides or materials from a specific
+                  session, please get in touch with me.
                 </p>
                 <a className="inline-link" href="#contact">
                   Ask about presentation materials ↗
@@ -547,8 +554,8 @@ export default function Home() {
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  Find the original profiles and image credits, including
-                  current and historical affiliations.
+                  Explore my original profiles and image credits, with context
+                  on my current and earlier affiliations.
                 </p>
                 <a className="inline-link" href="/sources/">
                   Browse sources & credits ↗
@@ -568,10 +575,10 @@ export default function Home() {
               <em>something.</em>
             </h2>
             <p className="large-copy">
-              A workshop. A research collaboration. A conversation your audience
-              needs to have.
+              If you have a workshop, research collaboration or conversation in
+              mind, I’d love to hear what you are working on.
             </p>
-            <p>Based in Berlin. Connected across disciplines.</p>
+            <p>I’m based in Berlin and work across disciplines.</p>
             <External href={s.linkedin.href}>Connect on LinkedIn</External>
           </div>
           <ContactForm />

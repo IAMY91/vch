@@ -147,7 +147,7 @@ export const publications = [
       "Topoisomerase I inhibition yields a CD74high/MHChigh human microglial subtype with enhanced Aβ uptake",
     doi: "10.1016/j.celrep.2026.118031",
     summary:
-      "A pharmacological approach to recreate and study a human microglial state with increased amyloid-β uptake. Laboratory and model-system research.",
+      "With my co-authors, I developed a pharmacological approach to study a human microglial state with increased amyloid-β uptake in laboratory models.",
     fullText: "https://edoc.mdc-berlin.de/id/eprint/26975/",
   },
   {
@@ -159,7 +159,7 @@ export const publications = [
       "HDAC inhibitors engage MITF and the disease-associated microglia signature to enhance amyloid β uptake",
     doi: "10.1016/j.bbi.2025.05.027",
     summary:
-      "Investigating how changes in gene regulation alter human microglia-like cells and their uptake of amyloid-β.",
+      "With my co-authors, I investigated how changes in gene regulation alter human microglia-like cells and their uptake of amyloid-β.",
     fullText: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12286591/",
   },
   {
@@ -171,7 +171,7 @@ export const publications = [
       "A cross-disease resource of living human microglia identifies disease-enriched subsets and tool compounds recapitulating microglial states",
     doi: "10.1038/s41593-024-01764-7",
     summary:
-      "A single-cell resource connecting the diversity of human brain immune cells with neurological disease and experimental models.",
+      "I helped build a single-cell resource connecting the diversity of human brain immune cells with neurological disease and experimental models.",
     fullText: "https://www.nature.com/articles/s41593-024-01764-7",
   },
   {
@@ -183,7 +183,7 @@ export const publications = [
       "Neuroimmune contributions to Alzheimer’s disease: a focus on human data",
     doi: "10.1038/s41380-022-01637-0",
     summary:
-      "A review of human evidence on the immune system’s involvement in Alzheimer’s disease.",
+      "Together with Philip L. De Jager, I reviewed human evidence on the immune system’s involvement in Alzheimer’s disease.",
     fullText: "https://www.nature.com/articles/s41380-022-01637-0",
   },
   {
@@ -195,7 +195,7 @@ export const publications = [
       "The need for sustainable leadership in academia: A survey of German researchers reveals a widespread lack of training for leadership skills",
     doi: "10.15252/embr.202153592",
     summary:
-      "Examining leadership training and the conditions that support people doing research.",
+      "With my co-authors, I examined leadership training and the conditions that support people doing research.",
     fullText: "https://www.embopress.org/doi/full/10.15252/embr.202153592",
   },
   {
@@ -207,7 +207,7 @@ export const publications = [
       "Impaired performance of SARS-CoV-2 antigen-detecting rapid diagnostic tests at elevated and low temperatures",
     doi: "10.1016/j.jcv.2021.104796",
     summary:
-      "Testing how environmental temperature affects the performance of rapid antigen diagnostics.",
+      "With my co-authors, I tested how environmental temperature affects the performance of rapid antigen diagnostics.",
     fullText: "https://pubmed.ncbi.nlm.nih.gov/33773413/",
   },
   {
@@ -219,7 +219,7 @@ export const publications = [
       "A survey of travel behaviour among scientists in Germany and the potential for change",
     doi: "10.7554/eLife.56765",
     summary:
-      "Exploring scientific travel and opportunities to reduce the environmental footprint of research.",
+      "I explored scientific travel and opportunities to reduce the environmental footprint of research.",
     fullText: "https://elifesciences.org/articles/56765",
   },
   {
@@ -231,7 +231,7 @@ export const publications = [
       "Comprehensive gene expression meta-analysis identifies signature genes that distinguish microglia from peripheral monocytes/macrophages in health and glioma",
     doi: "10.1186/s40478-019-0665-y",
     summary:
-      "Identifying gene signatures that distinguish brain-resident microglia from other immune cells.",
+      "With my co-authors, I identified gene signatures that distinguish brain-resident microglia from other immune cells.",
     fullText:
       "https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-019-0665-y",
   },
@@ -244,7 +244,7 @@ export const appearances = [
     title: "Stress management & resilience",
     venue: "Berlin Postdoc Day · Berlin Science Week",
     description:
-      "An interactive mental health session with Dr. Jelena Brasanac, representing SciLead and Dragonfly Mental Health.",
+      "I co-facilitated an interactive mental health session with Dr. Jelena Brasanac, representing SciLead and Dragonfly Mental Health.",
     source: "postdocDay",
   },
   {
@@ -254,7 +254,7 @@ export const appearances = [
     title: "Agile Collaboration in Science & Medicine",
     venue: "Berlin Institute of Health at Charité",
     description:
-      "Co-facilitated with Daniela Nguyen: self-organization, communication, iterative work and peer case clinics.",
+      "With Daniela Nguyen, I facilitated a workshop on self-organization, communication, iterative work and peer case clinics.",
     source: "agile",
   },
   {
@@ -264,7 +264,7 @@ export const appearances = [
     title: "The Brain’s Hidden Guardians",
     venue: "Neuroscience and Beyond · Podcast",
     description:
-      "A conversation about microglia in health and disease, and the questions driving neuroimmunology.",
+      "I discussed microglia in health and disease, and the questions driving my work in neuroimmunology.",
     source: "podcast",
   },
   {
@@ -274,7 +274,7 @@ export const appearances = [
     title: "Glass Ceilings in Academia",
     venue: "German Scholars Organization · To Be Honest Conference",
     description:
-      "With Saumya Pant and Taiwo Fagbemigun, moderated by Birte Seffert. Systemic barriers, mentorship and inclusive institutions.",
+      "I joined Saumya Pant and Taiwo Fagbemigun to discuss systemic barriers, mentorship and inclusive institutions, moderated by Birte Seffert.",
     source: "glassCeiling",
   },
   {
@@ -284,7 +284,7 @@ export const appearances = [
     title: "Career Development & Leadership",
     venue: "4EU+ · Heidelberg University",
     description:
-      "A panel discussion on academic careers and leadership development.",
+      "I joined a panel discussion on academic careers and leadership development.",
     source: "heidelberg",
   },
   {
@@ -294,9 +294,9 @@ export const appearances = [
     title: "Creating a More Sustainable Future at Every Level",
     venue: "Columbia University",
     description:
-      "A discussion connecting individual and institutional approaches to sustainability.",
+      "I joined a discussion connecting individual and institutional approaches to sustainability.",
     source: "columbiaPanel",
   },
 ] as const;
 export const shortBio =
-  "Verena Claudia Haage, PhD, is a neuroimmunologist, senior postdoctoral scientist at ECRC–Charité in Berlin, and co-founder of SciLead, the Sustainable Leadership for Science Initiative. Her research explores brain immune cells and neurodegenerative disease; her current work investigates circadian rhythms in multiple sclerosis. Alongside her research, she facilitates conversations and workshops on leadership, collaboration, mental health and sustainable research culture.";
+  "I’m Verena Claudia Haage, a neuroimmunologist, senior postdoctoral scientist at ECRC–Charité in Berlin, and co-founder of SciLead, the Sustainable Leadership for Science Initiative. I study brain immune cells and neurodegenerative disease, with my current research focusing on circadian rhythms in multiple sclerosis. Alongside my research, I facilitate conversations and workshops on leadership, collaboration, mental health and sustainable research culture.";

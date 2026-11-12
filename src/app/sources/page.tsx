@@ -14,29 +14,28 @@ export default function Sources() {
       </a>
       <Header />
       <main id="main" className="document-page">
-        <p className="eyebrow">The evidence behind the profile</p>
+        <p className="eyebrow">The sources behind my work</p>
         <h1>
           Sources <em>& credits.</em>
         </h1>
         <p>
-          This platform brings Verena’s public work together with links to
-          original profiles, programmes and publications. Last editorial review:{" "}
-          {reviewedOn}.
+          I bring my public work together here with links to original profiles,
+          programmes and publications. Last editorial review: {reviewedOn}.
         </p>
         <h2>Current & historical context</h2>
         <p>
-          The TRR 418 profile documents Verena’s current role as senior
-          postdoctoral scientist at ECRC–Charité Berlin. The 2026 Berlin Science
-          Week and BIH profiles corroborate her Charité affiliation. The Falling
-          Walls 2023 profile and some initiative and panel pages describe her
-          earlier Columbia University appointment.
+          The TRR 418 profile documents my current role as senior postdoctoral
+          scientist at ECRC–Charité Berlin. The 2026 Berlin Science Week and BIH
+          profiles corroborate my Charité affiliation. The Falling Walls 2023
+          profile and some initiative and panel pages describe my earlier
+          Columbia University appointment.
         </p>
         <p>
-          Event entries identify her documented role: workshop facilitator,
+          My event entries identify my documented role: workshop facilitator,
           panelist or interview guest. Keynotes are an invitation format, not an
           assertion about an unverified past engagement. SciLead’s wider event
           archive describes collective initiative activity and is not treated as
-          Verena’s individual speaking record.
+          my individual speaking record.
         </p>
         <h2>Profiles, projects, initiatives & media</h2>
         <ul className="source-list">
@@ -93,7 +92,7 @@ export default function Sources() {
             <a href={profileSources.circadianMedicine.href}>TRR 418 profile</a>.
             Photographer and reuse licence are not specified on the profile;
             attribution identifies the source, not the rights holder. Any
-            further press use should be cleared with Verena.
+            further press use should be cleared with me.
           </li>
           <li>
             Outdoor portrait:{" "}
@@ -114,7 +113,11 @@ export default function Sources() {
         <p>
           No standalone slide deck was verified in the public sources reviewed.
           The resources section links to original papers, the doctoral thesis
-          and event programmes. The YouTube recording’s title and channel were verified through YouTube’s public oEmbed metadata: The Brain’s Hidden Guardians: Microglia in Health and Disease, by Neuroscience and Beyond.</p>
+          and event programmes. The YouTube recording’s title and channel were
+          verified through YouTube’s public oEmbed metadata: The Brain’s Hidden
+          Guardians: Microglia in Health and Disease, by Neuroscience and
+          Beyond.
+        </p>
         <p>
           For updates, corrections or presentation material, contact{" "}
           <a href="mailto:verena-claudia.haage@charite.de">
@@ -123,7 +126,7 @@ export default function Sources() {
           .
         </p>
         <a className="button button-primary" href="/">
-          Return to the profile ↗
+          Return to my work ↗
         </a>
       </main>
       <Footer />

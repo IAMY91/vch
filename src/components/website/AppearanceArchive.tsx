@@ -10,6 +10,7 @@ export default function AppearanceArchive() {
     <div className="appearance-archive">
       <div
         className="filter-buttons light-filters"
+        role="group"
         aria-label="Filter appearances"
       >
         {["All formats", "Workshop", "Panel", "Interview"].map((f) => (

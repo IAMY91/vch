@@ -1,101 +1,35 @@
-# Personal website: research and editorial record
+# Research & editorial record
 
-## Repository foundation
+Reviewed 12 November 2026. This supersedes the earlier provisional link-only inventory.
 
-The working checkout is `/workspace/VCH` with origin `https://github.com/IAMY91/VCH.git`.
-On 2026-11-12, `git ls-remote https://github.com/IAMY91/circle-app.git HEAD`
-returned `760d9d675663bde1b28f3318c3ee4efebcf2bb8f` (also the initial local HEAD).
-The existing personal website, typography, responsive navigation, contact form,
-and visual identity are retained as the foundation. Circle-room application
-components are not mounted on the personal home page.
+The site's evidence registry is `src/lib/profileSources.ts`; `/sources/` exposes original links and editorial context to visitors. Eight selected journal publications are linked by DOI. Six documented appearances identify actual roles; invitation language for keynotes does not assert a past keynote credit.
 
-## Scope and verification
+## Current identity
 
-The owner requested a representative website for Verena Claudia Haage, PhD,
-with emphasis on academic leadership and science communication. The request's
-third positioning area was incomplete and remains to be clarified.
+TRR 418's Verena Haage profile identifies her as senior postdoctoral scientist at ECRC–Charité Berlin, researching circadian rhythms and immune-cell dynamics in multiple sclerosis (B01). Berlin Science Week's 2026 profile and BIH's 8 October 2026 workshop corroborate Charité and her SciLead co-founder role. Columbia University is an earlier appointment. Falling Walls' 2023 profile and some initiative biographies are historically useful but stale for present employment.
 
-Leadership section topics describe editorial interests and conversation themes;
-they do not assert employment, management appointments, awards, or event credits.
-No external biographical records, publications, talk recordings, portraits,
-slides, or initiatives have yet been verified in this task.
+## Coverage
 
-## Research access blocker
+Public profiles: TRR 418, Berlin Science Week, Falling Walls; ORCID 0000-0001-7569-8421; ResearchGate and researcher story; Charité doctoral record.
 
-On 2026-11-12 the environment proxy denied requests to Google search and
-Wikipedia with HTTP 403. Search/publication/media domain additions were saved
-to the environment configuration draft. They require saving in environment
-settings before research can resume. Additional institutional domains may be
-needed once relevant primary sources are identified. Do not route around the
-network policy or mistake a denied request for evidence that no records exist.
+Initiatives: SciLead, eLife Community Ambassadors and the 2024 postdoc-departure survey (closed), Dragonfly Mental Health via Berlin Science Week, Wild Woman Project circle facilitation.
 
-## Evidence to collect before publishing
+Appearances: 2026 Berlin Postdoc Day session with Jelena Brasanac; 2026 BIH agile workshop with Daniela Nguyen; 2025 Neuroscience and Beyond podcast; GSO Glass Ceilings panel (date not listed); 2022 Heidelberg 4EU+ panel; 2021 Columbia sustainability panel.
 
-For each claim or work, record:
+Media: The Brain's Hidden Guardians podcast/video, Rethinking the Research Culture episode 6, ZEIT's 25 January 2024 Zia feature, Wild Woman Project spotlight. YouTube public oEmbed confirmed video ZRQzm6BKyqo as The Brain’s Hidden Guardians: Microglia in Health and Disease | Dr. Verena Haage, channel Neuroscience and Beyond.
 
-- Exact name and identity match (institution, field, author identifier).
-- Primary source URL, publisher, page title, access date, and supporting text.
-- Title, actual date, venue/institution, role, collaborators, and format.
-- Original publication/DOI, video, slides, project, or initiative URL.
-- For images and files: original URL, photographer/creator, licence or permission,
-  attribution wording, and local asset path. Public visibility is not permission
-  to republish. Link to the original when reuse permission is unknown.
+## Research selection
 
-Prefer institutional biographies and event programmes for roles and talks,
-ORCID/publisher records for papers, and the creator's original channel for
-recordings and slides. Cross-check short-name author matches before attribution.
-Avoid scraped contact details and private or unrelated personal information.
-Do not fill gaps with inferred titles, dates, accomplishments, or stock portraits.
+2026 Cell Reports DOI 10.1016/j.celrep.2026.118031 (online 23 September, issue 27 October); 2025 Brain Behavior and Immunity 10.1016/j.bbi.2025.05.027; 2024 Nature Neuroscience 10.1038/s41593-024-01764-7; 2022 Molecular Psychiatry 10.1038/s41380-022-01637-0; 2021 EMBO Reports 10.15252/embr.202153592; 2021 Journal of Clinical Virology 10.1016/j.jcv.2021.104796; 2020 eLife 10.7554/eLife.56765; 2019 Acta Neuropathologica Communications 10.1186/s40478-019-0665-y.
 
-## Remaining content work
+Do not count preprints as separate flagship outputs. ResearchGate output counts include versions and non-journal material; no total of peer-reviewed papers is asserted. Studies involving human cell models and animals do not establish clinical treatment efficacy.
 
-1. Resolve official identity/profile and the third positioning area.
-2. Build an evidence inventory from accessible primary sources.
-3. Replace existing unpublished sections with verified content and visible source links.
-4. Add permitted photography, captions, credits, and accessible descriptions.
-5. Configure the owner-approved public contact address and deployment URL.
-6. Check links, responsive rendering, form behaviour, metadata, and social image.
+## Images
 
-`NEXT_PUBLIC_CONTACT_EMAIL` is optional: without it the existing form explains
-that enquiries are not open and does not send or store submissions.
-`NEXT_PUBLIC_SITE_URL` defaults to localhost for development; set the actual
-public URL before building for deployment. These public settings contain no secrets.
+- `public/images/verena-portrait.webp`: compressed original https://cdn.prod.website-files.com/693af151d1b73134492dd16e/695d67b84944e2efe628db37_Verena_Haage-9324.jpg from TRR 418. Photographer/licence not specified. Source attribution is not a claim of copyright ownership or a reusable press licence.
+- `public/images/verena-outdoors.webp`: compressed original https://thewildwomanproject.com/wp-content/uploads/2024/01/Verena-Claudia-Haage-Berlin-Germany-The-Wild-Woman-Project.png. Published sharing policy requests credit, supplied visibly and on Sources & credits.
+- ZEIT's Phil Dera photos are linked through the feature, not copied.
 
-## Owner-supplied sources
+## Gaps
 
-The owner supplied these nine URLs and requested their use, including portraits.
-All nine page requests were denied by the environment proxy (CONNECT HTTP 403).
-Their domains have been added to the existing configuration draft, preserving
-previous custom rules. The live policy still requires the settings change.
-
-The website now links to these resources in the relevant sections. Link labels
-are based on publisher names and the supplied URL paths. They are not quotations
-of verified page titles, evidence of a current affiliation, or confirmation of
-Verena's exact role in the linked event/article. No event dates, appointments,
-publication titles, image credits, or video title have been inferred.
-
-| Section | Publisher | URL | Inspection |
-| --- | --- | --- | --- |
-| About | Falling Walls Foundation | https://falling-walls.com/foundation/people/verena-claudia-haage | Blocked |
-| About | Berlin Science Week | https://berlinscienceweek.com/de/foundation/people/verena-haage | Blocked |
-| Research | Circadian Medicine | https://www.circadianmedicine.de/people/verena-haage | Blocked |
-| Research | ResearchGate | https://www.researchgate.net/profile/Verena-Haage | Blocked |
-| Circles | The Wild Woman Project | https://thewildwomanproject.com/verena-claudia-haage-berlin-germany/ | Blocked |
-| Speaking | YouTube | https://www.youtube.com/watch?v=ZRQzm6BKyqo | Blocked |
-| Leadership | Berlin Institute of Health | https://www.bihealth.org/de/aktuell/agile-zusammenarbeit-in-wissenschaft-und-medizin | Blocked |
-| Leadership | German Scholars Organization | https://gsonet.org/karrierewissen/tbh-conference-glass-ceiling-in-academia/ | Blocked |
-| Leadership | ZEIT für X | https://zeitfuerx.de/forschung/starke-frauen-fuer-die-wissenschaft/ | Blocked |
-
-Source URLs and display labels are centralized in `src/lib/profileSources.ts`.
-After access is applied, inspect each original, record supported facts and dates,
-identify portrait files and credits, and replace the provisional labels with
-actual page titles where different. Do not embed a guessed image URL or use
-an unrelated/generated person as a portrait. The image work remains outstanding.
-
-Validation of the linked-source integration: production build and lint passed
-(with the inherited cleanup-ref warning). Chromium checks confirmed all nine
-unique source links render, page anchors and mobile navigation work, there is
-no horizontal overflow at 1440px/390px, contact fallback works, no page exceptions
-occur, and the social image returns PNG. External destinations could not be
-validated because of the network policy; these checks establish local rendering,
-not successful access to the original sources.
+No standalone public slide deck was verified. Hosts are directed to ask Verena for session-specific slides. There are no invented testimonials, keynote history, institutional endorsements or unverified metrics. No personal residential address or unrelated private information was gathered.

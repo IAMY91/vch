@@ -141,12 +141,12 @@ em {
 }
 .wordmark strong {
   display: block;
-  font-size: 0.69rem;
+  font-size: 0.875rem;
   letter-spacing: 0.14em;
 }
 .wordmark small {
   display: block;
-  font-size: 0.61rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-top: 0.2rem;
 }
@@ -155,14 +155,14 @@ em {
   gap: 1.6rem;
 }
 .site-header nav a {
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   text-decoration: none;
 }
 .site-header nav a:hover {
   color: var(--terra);
 }
 .header-cta {
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   text-decoration: none;
   border: 1px solid var(--rule);
   padding: 0.7rem 1rem;
@@ -197,13 +197,13 @@ em {
 .eyebrow,
 .section-kicker,
 .tag {
-  font-size: 0.64rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 .hero .eyebrow {
-  font-size: 0.6rem;
+  font-size: 0.875rem;
   letter-spacing: 0.11em;
   display: flex;
   align-items: center;
@@ -247,7 +247,7 @@ em {
   text-decoration: none;
   border: 0;
   padding: 1rem 1.3rem;
-  font-size: 0.73rem;
+  font-size: 0.875rem;
   cursor: pointer;
   font-weight: 600;
   transition:
@@ -266,7 +266,7 @@ em {
   color: var(--ink);
 }
 .text-link {
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   text-decoration: none;
   border-bottom: 1px solid;
   padding-bottom: 0.25rem;
@@ -275,7 +275,7 @@ em {
   display: flex;
   gap: 1.3rem;
   margin-top: 3rem;
-  font-size: 0.6rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .hero-footnote span + span:before {
@@ -309,7 +309,7 @@ em {
   text-shadow: 0 1px 6px #000;
 }
 .hero-portrait figcaption {
-  font-size: 0.53rem;
+  font-size: 0.875rem;
   margin-top: 0.55rem;
   color: var(--muted);
   text-align: right;
@@ -319,7 +319,7 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.59rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-top: 1.5rem;
@@ -340,7 +340,7 @@ em {
   border-bottom: 1px solid var(--rule);
 }
 .context-strip > span {
-  font-size: 0.55rem;
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   max-width: 100px;
@@ -369,7 +369,7 @@ em {
   padding-bottom: 1.1rem;
   margin-bottom: 3.5rem;
   border-bottom: 1px solid var(--rule);
-  font-size: 0.59rem;
+  font-size: 0.875rem;
 }
 .section-kicker span + span {
   font-weight: 400;
@@ -392,7 +392,7 @@ em {
   color: #506259;
 }
 .inline-link {
-  font-size: 0.74rem;
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid var(--rule);
@@ -416,7 +416,7 @@ em {
   padding-top: 1rem;
 }
 .journey > div > span {
-  font-size: 0.58rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--terra);
@@ -426,12 +426,12 @@ em {
   margin: 0.8rem 0;
 }
 .journey p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-bottom: 1rem;
 }
 .journey .inline-link {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .dark-section {
   background: var(--ink);
@@ -457,7 +457,7 @@ em {
 }
 .leadership-heading p + p,
 .speaking-heading p + p {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
   margin: 1.3rem 0;
 }
@@ -481,7 +481,7 @@ em {
   font-size: 1.8rem;
 }
 .leadership-pillars p {
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
   margin-top: 1rem;
   max-width: 290px;
@@ -512,7 +512,7 @@ em {
   margin-top: 1.5rem;
 }
 .leadership-evidence a {
-  font-size: 0.63rem;
+  font-size: 0.875rem;
 }
 .research-heading {
   display: grid;
@@ -531,7 +531,7 @@ em {
   overflow: hidden;
 }
 .project-card .eyebrow {
-  font-size: 0.57rem;
+  font-size: 0.875rem;
   margin-bottom: 3rem;
 }
 .project-card h3 {
@@ -539,11 +539,11 @@ em {
   position: relative;
 }
 .project-card p:not(.eyebrow) {
-  font-size: 0.81rem;
+  font-size: 0.875rem;
   margin: 1.1rem 0;
 }
 .project-card .inline-link {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .circadian-mark {
   position: absolute;
@@ -584,7 +584,7 @@ em {
 .publications-heading > div {
   display: flex;
   gap: 1.3rem;
-  font-size: 0.68rem;
+  font-size: 0.875rem;
 }
 .library-controls {
   display: flex;
@@ -603,7 +603,7 @@ em {
   background: none;
   border: 1px solid var(--rule);
   border-radius: 30px;
-  font-size: 0.64rem;
+  font-size: 0.875rem;
   padding: 0.55rem 0.8rem;
   cursor: pointer;
   color: var(--ink);
@@ -622,13 +622,13 @@ em {
 .search-label input {
   background: none;
   border: 0;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   padding: 0.5rem;
   width: 195px;
   color: var(--ink);
 }
 .result-count {
-  font-size: 0.6rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-bottom: 1rem;
 }
@@ -651,7 +651,7 @@ em {
   margin-top: 0.6rem;
 }
 .publication .eyebrow {
-  font-size: 0.56rem;
+  font-size: 0.875rem;
   color: var(--terra);
   margin-bottom: 0.6rem;
 }
@@ -667,23 +667,23 @@ em {
   color: var(--terra);
 }
 .publication p:not(.eyebrow) {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin: 0.75rem 0;
   color: #506259;
   max-width: 730px;
 }
 .publication small {
-  font-size: 0.61rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .publication-actions {
   display: flex;
   gap: 1.5rem;
   margin-top: 0.9rem;
-  font-size: 0.62rem;
+  font-size: 0.875rem;
 }
 .research-note {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   color: var(--muted);
   border-top: 1px solid var(--rule);
   padding-top: 1.3rem;
@@ -707,7 +707,7 @@ em {
   margin: 2.8rem 0 4rem;
 }
 .topic-list span {
-  font-size: 0.63rem;
+  font-size: 0.875rem;
   border: 1px solid #ffffff45;
   padding: 0.6rem 0.8rem;
 }
@@ -722,7 +722,7 @@ em {
   font-size: 2rem;
 }
 .archive-heading > span {
-  font-size: 0.59rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
 }
 .light-filters button {
@@ -749,15 +749,15 @@ em {
 }
 .event-date {
   display: block;
-  font-size: 0.67rem;
+  font-size: 0.875rem;
   margin-bottom: 0.6rem;
 }
 .tag {
-  font-size: 0.5rem;
+  font-size: 0.875rem;
   color: var(--sand);
 }
 .appearance .eyebrow {
-  font-size: 0.5rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
   margin-bottom: 0.65rem;
 }
@@ -765,7 +765,7 @@ em {
   font-size: 1.7rem;
 }
 .appearance p:not(.eyebrow) {
-  font-size: 0.77rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
   max-width: 650px;
   margin-top: 0.75rem;
@@ -806,7 +806,7 @@ em {
   margin: 2rem 0;
 }
 .video-cover .eyebrow {
-  font-size: 0.55rem;
+  font-size: 0.875rem;
 }
 .video-cover button {
   display: flex;
@@ -816,7 +816,7 @@ em {
   border: 0;
   text-align: left;
   cursor: pointer;
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   padding: 0;
   color: var(--ink);
 }
@@ -827,10 +827,10 @@ em {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .video-cover > p {
-  font-size: 0.57rem;
+  font-size: 0.875rem;
   margin-top: 1rem;
 }
 .video-feature iframe {
@@ -843,7 +843,7 @@ em {
   display: block;
   border-top: 1px solid var(--rule);
   padding: 1rem 2.5rem;
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .media-story {
   display: block;
@@ -854,19 +854,19 @@ em {
 .media-story .eyebrow {
   display: block;
   color: var(--terra);
-  font-size: 0.52rem;
+  font-size: 0.875rem;
 }
 .media-story h3 {
   margin: 0.7rem 0;
   font-size: 1.85rem;
 }
 .media-story p {
-  font-size: 0.79rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-bottom: 0.8rem;
 }
 .media-story > span:not(.eyebrow) {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .community-section {
   background: var(--paper);
@@ -883,7 +883,7 @@ em {
   object-position: center 25%;
 }
 .community-photo p {
-  font-size: 0.52rem;
+  font-size: 0.875rem;
   margin-top: 0.5rem;
   color: var(--muted);
 }
@@ -895,7 +895,7 @@ em {
   margin: 1.8rem 0 1rem;
 }
 .community-copy > p:not(.large-copy, .eyebrow) {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .community-copy .inline-links {
@@ -908,7 +908,7 @@ em {
   gap: 8vw;
 }
 .resources-grid > div > p {
-  font-size: 0.83rem;
+  font-size: 0.875rem;
   max-width: 300px;
   margin-top: 1rem;
   color: var(--muted);
@@ -935,12 +935,12 @@ details[open] summary span {
   transform: rotate(45deg);
 }
 details > p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin: 1.2rem 0;
 }
 details .inline-link {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .contact-section {
   display: grid;
@@ -957,7 +957,7 @@ details .inline-link {
 }
 .contact-copy > p:not(.eyebrow, .large-copy) {
   color: #c3cfc7;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin-bottom: 1.5rem;
 }
 .contact-form {
@@ -965,7 +965,7 @@ details .inline-link {
   padding-top: 0.5rem;
 }
 .form-note {
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   color: #c3cfc7;
   margin-bottom: 1.8rem;
 }
@@ -978,7 +978,7 @@ details .inline-link {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 0.64rem;
+  font-size: 0.875rem;
 }
 .form-grid input,
 .form-grid select,
@@ -990,7 +990,7 @@ details .inline-link {
   border-bottom: 1px solid #ffffff60;
   border-radius: 0;
   padding: 0.65rem 0;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   min-width: 0;
 }
 .form-grid option {
@@ -1015,13 +1015,13 @@ details .inline-link {
   margin: 1.5rem 0 0.8rem;
 }
 .form-status {
-  font-size: 0.73rem;
+  font-size: 0.875rem;
   color: var(--sand);
   margin: 1rem 0;
   min-height: 1rem;
 }
 .direct-email {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   overflow-wrap: anywhere;
 }
 .site-footer {
@@ -1041,7 +1041,7 @@ details .inline-link {
   font-style: italic;
 }
 .site-footer p {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #bdc9bd;
   margin-top: 1rem;
 }
@@ -1051,7 +1051,7 @@ details .inline-link {
   justify-content: flex-end;
   align-items: start;
   flex-wrap: wrap;
-  font-size: 0.63rem;
+  font-size: 0.875rem;
 }
 .footer-bottom {
   display: flex;
@@ -1061,7 +1061,7 @@ details .inline-link {
   border-top: 1px solid #ffffff25;
   padding-top: 1.3rem;
   color: #bdc9bd;
-  font-size: 0.54rem;
+  font-size: 0.875rem;
 }
 .footer-bottom small {
   font-size: inherit;
@@ -1095,7 +1095,7 @@ details .inline-link {
   gap: 1rem;
 }
 .source-list .eyebrow {
-  font-size: 0.55rem;
+  font-size: 0.875rem;
 }
 .source-list a {
   font-family: Georgia, serif;
@@ -1103,11 +1103,11 @@ details .inline-link {
 }
 .source-list small {
   display: block;
-  font-size: 0.68rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .document-page ul:not(.source-list) {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   padding-left: 1.3rem;
 }
 .document-page li + li {
@@ -1133,14 +1133,14 @@ details .inline-link {
     display: none;
   }
   .wordmark strong {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
   .hero {
     gap: 3vw;
     padding-top: 3rem;
   }
   .hero .eyebrow {
-    font-size: 0.5rem;
+    font-size: 0.875rem;
   }
   .hero-footnote {
     flex-direction: column;
@@ -1209,13 +1209,13 @@ details .inline-link {
     gap: 0.7rem;
   }
   .wordmark strong {
-    font-size: 0.53rem;
+    font-size: 0.875rem;
     letter-spacing: 0.08em;
     max-width: 140px;
   }
   .header-cta {
     padding: 0.55rem 0.65rem;
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
   .header-cta span {
     margin-left: 0.7rem;
@@ -1241,7 +1241,7 @@ details .inline-link {
   }
   .site-header nav a {
     padding: 0.7rem;
-    font-size: 0.85rem;
+    font-size: 0.875rem;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -1249,7 +1249,7 @@ details .inline-link {
     gap: 2rem;
   }
   .hero .eyebrow {
-    font-size: 0.48rem;
+    font-size: 0.875rem;
     margin-bottom: 2rem;
   }
   .hero h1 {
@@ -1265,7 +1265,7 @@ details .inline-link {
   .hero-footnote {
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 0.53rem;
+    font-size: 0.875rem;
     margin-top: 2rem;
     gap: 1rem;
   }
@@ -1285,7 +1285,7 @@ details .inline-link {
   }
   .hero-bottom {
     margin-top: 0;
-    font-size: 0.48rem;
+    font-size: 0.875rem;
     gap: 2rem;
     align-items: start;
   }
@@ -1298,7 +1298,7 @@ details .inline-link {
     font-size: 1rem;
   }
   .context-strip small {
-    font-size: 0.45rem;
+    font-size: 0.875rem;
   }
   .section {
     padding-top: 3.7rem;
@@ -1306,7 +1306,7 @@ details .inline-link {
   }
   .section-kicker {
     margin-bottom: 2.5rem;
-    font-size: 0.5rem;
+    font-size: 0.875rem;
   }
   .section-kicker span + span {
     display: none;
@@ -1391,7 +1391,7 @@ details .inline-link {
     width: 100%;
   }
   .filter-buttons button {
-    font-size: 0.59rem;
+    font-size: 0.875rem;
     padding: 0.5rem 0.7rem;
   }
   .publication {
@@ -1412,7 +1412,7 @@ details .inline-link {
     font-size: 1.5rem;
   }
   .publication p:not(.eyebrow) {
-    font-size: 0.77rem;
+    font-size: 0.875rem;
   }
   .topic-list {
     margin-bottom: 2.5rem;
@@ -1551,7 +1551,7 @@ details .inline-link {
 }
 .hero-portrait figcaption {
   padding-right: 1rem;
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .site-header nav {
   gap: 1.1rem;
@@ -1587,19 +1587,19 @@ details .inline-link {
 .context-strip > span,
 .section-kicker,
 .section-kicker span + span {
-  font-size: 0.67rem;
+  font-size: 0.875rem;
 }
 .hero .eyebrow {
-  font-size: 0.67rem;
+  font-size: 0.875rem;
 }
 .hero-footnote {
-  font-size: 0.72rem;
+  font-size: 0.875rem;
 }
 .hero-bottom {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 .context-strip small {
-  font-size: 0.63rem;
+  font-size: 0.875rem;
 }
 .intro-text > p:not(.large-copy),
 .scilead-panel > div + div p,
@@ -1619,7 +1619,7 @@ details .inline-link {
 .publication .eyebrow,
 .media-story .eyebrow,
 .project-card .eyebrow {
-  font-size: 0.66rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .publication-year span,
@@ -1627,16 +1627,16 @@ details .inline-link {
 .tag,
 .event-date,
 .archive-heading > span {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .filter-buttons button {
   min-height: 44px;
-  font-size: 0.74rem;
+  font-size: 0.875rem;
   padding: 0.55rem 0.95rem;
 }
 .search-label input {
   min-height: 44px;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   width: 220px;
 }
 .library-summary {
@@ -1648,7 +1648,7 @@ details .inline-link {
   margin: 0 0 1rem;
 }
 .result-count {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin: 0;
 }
 .library-toggle {
@@ -1656,13 +1656,13 @@ details .inline-link {
   border-bottom: 1px solid var(--rule);
   background: none;
   color: var(--ink);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   min-height: 44px;
   padding: 0.5rem 0;
   cursor: pointer;
 }
 .publication-actions {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .publication-actions a {
   padding: 0.35rem 0;
@@ -1670,33 +1670,33 @@ details .inline-link {
 }
 .inline-link,
 .text-link {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 .leadership-evidence a,
 .journey .inline-link,
 .project-card .inline-link,
 details .inline-link,
 .publications-heading > div {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .research-note,
 .community-photo p {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .video-cover > p,
 .video-cover .eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .video-cover button {
   min-height: 44px;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
 }
 .video-external,
 .media-story > span:not(.eyebrow) {
-  font-size: 0.76rem;
+  font-size: 0.875rem;
 }
 .form-note {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
 }
 .direct-contact {
   display: flex;
@@ -1713,7 +1713,7 @@ details .inline-link,
   color: var(--ivory);
   border: 1px solid #ffffff70;
   background: transparent;
-  font-size: 0.76rem;
+  font-size: 0.875rem;
   min-height: 44px;
   padding: 0.55rem 0.9rem;
   cursor: pointer;
@@ -1734,17 +1734,17 @@ details .inline-link,
   margin-top: 1.2rem;
 }
 .form-grid label {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
 }
 .form-grid input,
 .form-grid select {
   min-height: 44px;
 }
 .form-status {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
 }
 .footer-links {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .footer-links a {
   min-height: 36px;
@@ -1752,12 +1752,12 @@ details .inline-link,
   align-items: center;
 }
 .footer-bottom {
-  font-size: 0.65rem;
+  font-size: 0.875rem;
 }
 @media (min-width: 761px) and (max-width: 1150px) {
   .wordmark strong {
     max-width: 160px;
-    font-size: 0.63rem;
+    font-size: 0.875rem;
   }
   .site-header {
     height: 88px;
@@ -1766,13 +1766,13 @@ details .inline-link,
     gap: 0.75rem;
   }
   .site-header nav a {
-    font-size: 0.68rem;
+    font-size: 0.875rem;
   }
   .hero .eyebrow {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
   .hero-footnote {
-    font-size: 0.67rem;
+    font-size: 0.875rem;
   }
   .hero-portrait {
     margin-left: -2rem;
@@ -1782,7 +1782,7 @@ details .inline-link,
 @media (min-width: 761px) and (max-width: 1000px) {
   .wordmark strong {
     max-width: 145px;
-    font-size: 0.58rem;
+    font-size: 0.875rem;
   }
   .site-header {
     gap: 0.5rem;
@@ -1792,10 +1792,10 @@ details .inline-link,
     gap: 0.65rem;
   }
   .site-header nav a {
-    font-size: 0.65rem;
+    font-size: 0.875rem;
   }
   .header-cta {
-    font-size: 0.65rem;
+    font-size: 0.875rem;
     padding-inline: 0.6rem;
   }
   .header-cta span {
@@ -1822,20 +1822,20 @@ details .inline-link,
       linear-gradient(270deg, var(--ivory) 0%, transparent 12%);
   }
   .hero .eyebrow {
-    font-size: 0.57rem;
+    font-size: 0.875rem;
     flex-wrap: wrap;
   }
   .hero-footnote {
-    font-size: 0.68rem;
+    font-size: 0.875rem;
   }
   .hero-bottom {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
   .context-strip small {
-    font-size: 0.62rem;
+    font-size: 0.875rem;
   }
   .section-kicker {
-    font-size: 0.65rem;
+    font-size: 0.875rem;
   }
   .site-header nav a {
     min-height: 48px;
@@ -1858,7 +1858,7 @@ details .inline-link,
     gap: 0.5rem;
   }
   .filter-buttons button {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
   }
   .direct-contact {
     gap: 0.8rem;
@@ -1867,6 +1867,393 @@ details .inline-link,
     font-size: 0.88rem;
   }
   .footer-bottom {
-    font-size: 0.62rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Official identities, readable details and uncropped imagery. */
+.hero-affiliations {
+  margin-top: 2rem;
+  border-left: 3px solid var(--terra);
+  padding: 0.1rem 0 0.1rem 1rem;
+  max-width: 560px;
+}
+.affiliation-label {
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--terra);
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+.affiliation-lede {
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 1.65vw, 1.55rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+.affiliation-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.affiliation-scilead {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+.brand-band {
+  background: var(--paper);
+  border-block: 1px solid var(--rule);
+  padding: 2rem var(--pad) 2.2rem;
+}
+.brand-band > .eyebrow {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1.3rem;
+}
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+.brand-card {
+  min-height: 145px;
+  border: 1px solid #263d352b;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0.8rem;
+  text-decoration: none;
+  transition:
+    box-shadow 0.25s,
+    border-color 0.25s,
+    background 0.25s;
+}
+.brand-image {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand-image img {
+  max-width: 100%;
+  width: 160px;
+  height: 58px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition:
+    filter 0.25s,
+    opacity 0.25s;
+}
+.brand-card-scienceweek .brand-image img {
+  width: 180px;
+}
+.brand-card-fallingwalls .brand-image img {
+  width: 65px;
+  height: 65px;
+}
+.brand-card-elife .brand-image img {
+  width: 135px;
+}
+.brand-card-charite {
+  background: var(--ink);
+  color: var(--ivory);
+}
+.brand-card-charite .brand-image img {
+  opacity: 0.85;
+}
+.brand-context {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.4;
+}
+.brand-card:hover,
+.brand-card:focus-visible {
+  box-shadow: 0 0 25px #78b39d50;
+  border-color: #72ac94;
+  background: #f8fffc;
+}
+.brand-card-charite:hover,
+.brand-card-charite:focus-visible {
+  background: #345749;
+}
+.brand-card:hover img,
+.brand-card:focus-visible img {
+  filter: grayscale(0) drop-shadow(0 0 6px #accbba60);
+  opacity: 1;
+}
+.scilead-signature {
+  display: inline-flex;
+  background: #fff;
+  padding: 0.8rem 1.1rem;
+  margin-bottom: 1.4rem;
+  border: 1px solid #ffffff70;
+  transition: box-shadow 0.25s;
+}
+.scilead-signature img {
+  width: 180px;
+  height: auto;
+}
+.scilead-signature:hover,
+.scilead-signature:focus-visible {
+  box-shadow: 0 0 24px #a1cbb76b;
+}
+.research-symbols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+.research-symbols > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+.research-symbols svg {
+  width: 34px;
+  height: 34px;
+  color: var(--terra);
+}
+.project-symbol {
+  position: absolute;
+  right: 1.8rem;
+  top: 2rem;
+  width: 66px;
+  height: 66px;
+  color: #5f775f;
+}
+.project-symbol svg {
+  width: 100%;
+  height: 100%;
+}
+.project-card .eyebrow {
+  max-width: calc(100% - 65px);
+}
+.publication-year > svg {
+  width: 32px;
+  height: 32px;
+  color: var(--terra);
+  margin-bottom: 0.75rem;
+}
+.publication-year .publication-year-number {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  color: var(--ink);
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.community-photo img {
+  height: auto;
+  max-height: none;
+  width: 100%;
+  object-fit: contain;
+  object-position: center top;
+}
+.video-stage {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  background: #101b23;
+  overflow: hidden;
+}
+.video-stage iframe,
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  border: 0;
+  display: block;
+}
+.video-thumbnail {
+  padding: 0;
+  background: #101b23;
+  cursor: pointer;
+}
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumbnail-play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 52px;
+  background: #a2472cf2;
+  color: #fff;
+  border: 1px solid #ffffffa0;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.thumbnail-play svg {
+  width: 30px;
+  height: 30px;
+}
+.video-thumbnail:hover .thumbnail-play,
+.video-thumbnail:focus-visible .thumbnail-play {
+  background: #c34625;
+  box-shadow: 0 0 20px #ffffff50;
+}
+.video-thumbnail:focus-visible {
+  outline-offset: -5px;
+  z-index: 1;
+}
+.video-caption {
+  padding: 1.4rem 1.5rem;
+}
+.video-caption > p {
+  font-size: 1rem;
+}
+.video-caption .video-privacy {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0.7rem 0 1rem;
+}
+.video-caption a {
+  font-size: 0.9rem;
+}
+.form-note {
+  max-width: 520px;
+}
+@media (max-width: 1080px) {
+  .site-header {
+    height: 84px;
+    padding-inline: 1.2rem;
+  }
+  .wordmark strong {
+    max-width: 240px;
+    font-size: 0.875rem;
+  }
+  .wordmark small {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    margin-left: auto;
+  }
+  .site-header nav {
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.4rem;
+    background: var(--ivory);
+    border-bottom: 1px solid var(--rule);
+    box-shadow: 0 12px 22px #263d3517;
+  }
+  .site-header nav.nav-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .site-header nav a {
+    font-size: 1rem;
+    min-height: 48px;
+  }
+  .site-header nav a[aria-current="location"]::after {
+    width: 30px;
+    right: auto;
+  }
+  .header-cta {
+    font-size: 0.875rem;
+  }
+  .brand-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .hero-affiliations {
+    margin-top: 1.6rem;
+  }
+  .affiliation-lede {
+    font-size: 1.2rem;
+  }
+  .affiliation-context {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .brand-card {
+    min-height: 145px;
+    padding: 1rem 0.6rem;
+  }
+  .brand-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 0.375rem);
+    width: 100%;
+    justify-self: center;
+  }
+  .brand-image img {
+    width: 135px;
+  }
+  .research-symbols {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .publication-year > svg {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .publication-year {
+    flex-wrap: wrap;
+  }
+  .publication-year .publication-year-number {
+    font-size: 1.4rem;
+  }
+  .community-photo {
+    max-width: 100%;
+  }
+  .community-photo img {
+    height: auto;
+  }
+  .wordmark {
+    gap: 0.5rem;
+  }
+  .wordmark strong {
+    max-width: 160px;
+    font-size: 0.875rem;
+    line-height: 1.35;
+  }
+  .header-cta {
+    font-size: 0.875rem;
+    padding-inline: 0.65rem;
+  }
+  .header-cta span {
+    display: none;
+  }
+  .project-symbol {
+    width: 50px;
+    height: 50px;
+    right: 1.4rem;
+  }
+  .video-caption {
+    padding: 1.1rem;
+  }
+}
+@media (hover: none) {
+  .brand-image img {
+    filter: none;
+    opacity: 1;
   }
 }

@@ -19,11 +19,8 @@ export default function Privacy() {
           The enquiry form prepares a draft in your own email application using
           a mailto link. This website does not submit the form to a server,
           store its contents, or add you to a mailing list. You choose whether
-          to send the email. For questions about my website, you can reach me at{" "}
-          <a href="mailto:verena-claudia.haage@charite.de">
-            verena-claudia.haage@charite.de
-          </a>
-          .
+          to send the email. For questions about my website, please use{" "}
+          <a href="/#contact">the contact form</a>.
         </p>
         <h2>External services</h2>
         <p>

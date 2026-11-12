@@ -33,3 +33,11 @@ Do not count preprints as separate flagship outputs. ResearchGate output counts 
 ## Gaps
 
 No standalone public slide deck was verified. Hosts are directed to ask Verena for session-specific slides. There are no invented testimonials, keynote history, institutional endorsements or unverified metrics. No personal residential address or unrelated private information was gathered.
+
+## Official identity assets and contact update
+
+The affiliations band now uses original logo assets downloaded from official organization websites: `falling-walls.com/themes/custom/falling_walls/logo_fw.svg`, `berlinscienceweek.com/themes/custom/berlinscienceweek/logo.svg`, `elifesciences.org/assets/patterns/img/patterns/organisms/elife-logo-xs.5a3c8c68.svg`, SciLead's `static.wixstatic.com/media/c3e693_290762ca7c7e44ef9ef802cea1ce292f~mv2.png` header crop, and the white Charité SVG from TRR 418's footer (`cdn.prod.website-files.com/6938af362a90b61b1aa8cdbd/697e88acd1006b5aa4e5f79e_charite_logo.svg`). Originals are stored in `public/logos/`; colors and shapes are unchanged. CSS desaturates most logos at rest and restores color with glow on hover/keyboard focus. The white Charité logo uses a dark background. No Columbia logo is reproduced; the earlier appointment is identified in text.
+
+The YouTube thumbnail for video ZRQzm6BKyqo was downloaded from `https://i.ytimg.com/vi/ZRQzm6BKyqo/hqdefault.jpg`. The 16:9 preview removes its original letterboxing through layout; the file is unchanged. The source image for the Wild Woman portrait is unchanged and now rendered at its natural aspect ratio, with no top crop.
+
+The owner requested the contact recipient `verena.haage@gmail.com`. The email is not printed in the contact UI. The existing mailto draft workflow now targets this address; it does not claim server-side email delivery or automatic sending. Charité's public email is removed from auxiliary contact links and the downloadable biography. Current ECRC–Charité and previous Columbia roles remain labelled distinctly.

@@ -1,6 +1,6 @@
 // Editorial evidence record. Checked 12 November 2026. Historic roles are dated.
 export const reviewedOn = "12 November 2026";
-export const contactEmail = "verena-claudia.haage@charite.de";
+export const contactEmail = "verena.haage@gmail.com";
 export const profileSources = {
   circadianMedicine: {
     title: "Verena Haage · TRR 418",

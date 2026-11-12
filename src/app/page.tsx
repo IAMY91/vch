@@ -1,4 +1,6 @@
 import Image from "next/image";
+import BrandBand from "@/components/website/BrandBand";
+import ResearchIcon from "@/components/website/ResearchIcon";
 import Header from "@/components/website/Header";
 import Footer from "@/components/website/Footer";
 import ContactForm from "@/components/website/ContactForm";
@@ -55,9 +57,18 @@ export default function Home() {
                 Explore my research ↓
               </a>
             </div>
-            <div className="hero-footnote">
-              <span>Researcher at ECRC–Charité</span>
-              <span>Co-founder of SciLead</span>
+            <div className="hero-affiliations">
+              <p className="affiliation-label">My research journey</p>
+              <p className="affiliation-lede">
+                Researcher at ECRC–Charité Berlin
+                <br />
+                <span>and Columbia University, New York</span>
+              </p>
+              <div className="affiliation-context">
+                <span>ECRC–Charité · Current</span>
+                <span>Columbia · Previous appointment</span>
+              </div>
+              <p className="affiliation-scilead">Co-founder of SciLead</p>
             </div>
           </div>
           <figure className="hero-portrait">
@@ -87,24 +98,7 @@ export default function Home() {
             <a href="#about">Discover the connections ↓</a>
           </div>
         </section>
-        <div className="context-strip">
-          <span>Across research & public dialogue</span>
-          <a href={s.circadianMedicine.href} target="_blank" rel="noreferrer">
-            Charité <small>Current research</small>
-          </a>
-          <a href={s.scilead.href} target="_blank" rel="noreferrer">
-            SciLead <small>Co-founder</small>
-          </a>
-          <a href={s.berlinScienceWeek.href} target="_blank" rel="noreferrer">
-            Berlin Science Week <small>2026 speaker</small>
-          </a>
-          <a href={s.fallingWalls.href} target="_blank" rel="noreferrer">
-            Falling Walls <small>2023 Press Fellow</small>
-          </a>
-          <a href={s.elifeAmbassador.href} target="_blank" rel="noreferrer">
-            eLife <small>Community Ambassador</small>
-          </a>
-        </div>
+        <BrandBand />
         <section className="section intro" id="about">
           <div className="section-kicker">
             <span>01 / The connection</span>
@@ -253,6 +247,20 @@ export default function Home() {
           </div>
           <div className="scilead-panel">
             <div>
+              <a
+                className="scilead-signature"
+                href={s.scilead.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit SciLead"
+              >
+                <Image
+                  src="/logos/scilead.png"
+                  alt="SciLead"
+                  width={220}
+                  height={69}
+                />
+              </a>
               <p className="eyebrow">Co-founder / SciLead</p>
               <h3>
                 Shape a better
@@ -286,6 +294,20 @@ export default function Home() {
             <span>03 / Research & publications</span>
             <span>Brain immunity. Human evidence.</span>
           </div>
+          <div className="research-symbols">
+            <span>
+              <ResearchIcon name="microglia" />
+              Human microglia
+            </span>
+            <span>
+              <ResearchIcon name="dna" />
+              Gene expression
+            </span>
+            <span>
+              <ResearchIcon name="clock" />
+              Circadian rhythms
+            </span>
+          </div>
           <div className="research-heading">
             <div>
               <h2>
@@ -302,8 +324,8 @@ export default function Home() {
             </div>
             <div className="project-card">
               <p className="eyebrow">Current project / TRR 418 · B01</p>
-              <div className="circadian-mark" aria-hidden="true">
-                <span />
+              <div className="project-symbol">
+                <ResearchIcon name="clock" />
               </div>
               <h3>
                 When timing

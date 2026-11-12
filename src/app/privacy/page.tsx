@@ -19,7 +19,7 @@ export default function Privacy() {
           The enquiry form prepares a draft in your own email application using
           a mailto link. This website does not submit the form to a server,
           store its contents, or add you to a mailing list. You choose whether
-          to send the email. For enquiries about this profile, use{" "}
+          to send the email. For questions about my website, you can reach me at{" "}
           <a href="mailto:verena-claudia.haage@charite.de">
             verena-claudia.haage@charite.de
           </a>
@@ -44,7 +44,7 @@ export default function Privacy() {
         </p>
         <p>Last updated: 12 November 2026.</p>
         <a className="button button-primary" href="/">
-          Return to the profile ↗
+          Return to my work ↗
         </a>
       </main>
       <Footer />

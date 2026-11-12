@@ -1515,3 +1515,358 @@ details .inline-link {
     transition: none !important;
   }
 }
+
+/* First-person profile: a softer portrait transition and clearer visitor paths. */
+.hero {
+  grid-template-columns: 1.12fr 1fr;
+  gap: 1.5rem;
+}
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+.hero-lede {
+  max-width: 470px;
+}
+.hero-portrait {
+  margin-left: -3.5rem;
+  width: calc(100% + 3.5rem);
+}
+.portrait-frame {
+  border-radius: 0;
+  background: transparent;
+  aspect-ratio: 1;
+  isolation: isolate;
+}
+.portrait-frame::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--ivory) 0%, transparent 29%),
+    linear-gradient(0deg, var(--ivory) 0%, transparent 29%),
+    linear-gradient(180deg, var(--ivory) 0%, transparent 17%),
+    linear-gradient(270deg, var(--ivory) 0%, transparent 15%);
+}
+.hero-portrait figcaption {
+  padding-right: 1rem;
+  font-size: 0.65rem;
+}
+.site-header nav {
+  gap: 1.1rem;
+}
+.site-header nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.site-header nav a[aria-current="location"] {
+  color: var(--terra);
+}
+.site-header nav a[aria-current="location"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 2px;
+  background: currentColor;
+}
+.header-cta {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-button {
+  min-width: 44px;
+  min-height: 44px;
+}
+.context-strip > span,
+.section-kicker,
+.section-kicker span + span {
+  font-size: 0.67rem;
+}
+.hero .eyebrow {
+  font-size: 0.67rem;
+}
+.hero-footnote {
+  font-size: 0.72rem;
+}
+.hero-bottom {
+  font-size: 0.65rem;
+}
+.context-strip small {
+  font-size: 0.63rem;
+}
+.intro-text > p:not(.large-copy),
+.scilead-panel > div + div p,
+.community-copy > p:not(.large-copy, .eyebrow) {
+  font-size: 0.95rem;
+}
+.journey p,
+.leadership-pillars p,
+.appearance p:not(.eyebrow),
+.publication p:not(.eyebrow),
+.media-story p,
+.project-card p:not(.eyebrow) {
+  font-size: 0.9rem;
+}
+.journey > div > span,
+.appearance .eyebrow,
+.publication .eyebrow,
+.media-story .eyebrow,
+.project-card .eyebrow {
+  font-size: 0.66rem;
+  line-height: 1.6;
+}
+.publication-year span,
+.publication small,
+.tag,
+.event-date,
+.archive-heading > span {
+  font-size: 0.7rem;
+}
+.filter-buttons button {
+  min-height: 44px;
+  font-size: 0.74rem;
+  padding: 0.55rem 0.95rem;
+}
+.search-label input {
+  min-height: 44px;
+  font-size: 0.82rem;
+  width: 220px;
+}
+.library-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1rem;
+}
+.result-count {
+  font-size: 0.75rem;
+  margin: 0;
+}
+.library-toggle {
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  background: none;
+  color: var(--ink);
+  font-size: 0.75rem;
+  min-height: 44px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.publication-actions {
+  font-size: 0.75rem;
+}
+.publication-actions a {
+  padding: 0.35rem 0;
+  min-height: 36px;
+}
+.inline-link,
+.text-link {
+  font-size: 0.8rem;
+}
+.leadership-evidence a,
+.journey .inline-link,
+.project-card .inline-link,
+details .inline-link,
+.publications-heading > div {
+  font-size: 0.75rem;
+}
+.research-note,
+.community-photo p {
+  font-size: 0.75rem;
+}
+.video-cover > p,
+.video-cover .eyebrow {
+  font-size: 0.7rem;
+}
+.video-cover button {
+  min-height: 44px;
+  font-size: 0.82rem;
+}
+.video-external,
+.media-story > span:not(.eyebrow) {
+  font-size: 0.76rem;
+}
+.form-note {
+  font-size: 0.85rem;
+}
+.direct-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.direct-email {
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+.copy-email {
+  color: var(--ivory);
+  border: 1px solid #ffffff70;
+  background: transparent;
+  font-size: 0.76rem;
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+.copy-email:hover {
+  background: #ffffff15;
+}
+.email-composer,
+.email-composer:last-child {
+  border-color: #ffffff55;
+}
+.email-composer summary {
+  min-height: 44px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.email-composer .form-note {
+  margin-top: 1.2rem;
+}
+.form-grid label {
+  font-size: 0.78rem;
+}
+.form-grid input,
+.form-grid select {
+  min-height: 44px;
+}
+.form-status {
+  font-size: 0.85rem;
+}
+.footer-links {
+  font-size: 0.75rem;
+}
+.footer-links a {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-bottom {
+  font-size: 0.65rem;
+}
+@media (min-width: 761px) and (max-width: 1150px) {
+  .wordmark strong {
+    max-width: 160px;
+    font-size: 0.63rem;
+  }
+  .site-header {
+    height: 88px;
+  }
+  .site-header nav {
+    gap: 0.75rem;
+  }
+  .site-header nav a {
+    font-size: 0.68rem;
+  }
+  .hero .eyebrow {
+    font-size: 0.6rem;
+  }
+  .hero-footnote {
+    font-size: 0.67rem;
+  }
+  .hero-portrait {
+    margin-left: -2rem;
+    width: calc(100% + 2rem);
+  }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .wordmark strong {
+    max-width: 145px;
+    font-size: 0.58rem;
+  }
+  .site-header {
+    gap: 0.5rem;
+    padding-inline: 1.2rem;
+  }
+  .site-header nav {
+    gap: 0.65rem;
+  }
+  .site-header nav a {
+    font-size: 0.65rem;
+  }
+  .header-cta {
+    font-size: 0.65rem;
+    padding-inline: 0.6rem;
+  }
+  .header-cta span {
+    margin-left: 0.7rem;
+  }
+}
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .hero-portrait {
+    margin: 0;
+    width: 100%;
+  }
+  .portrait-frame {
+    aspect-ratio: 1.05;
+  }
+  .portrait-frame::after {
+    background:
+      linear-gradient(90deg, var(--ivory) 0%, transparent 15%),
+      linear-gradient(0deg, var(--ivory) 0%, transparent 24%),
+      linear-gradient(180deg, var(--ivory) 0%, transparent 12%),
+      linear-gradient(270deg, var(--ivory) 0%, transparent 12%);
+  }
+  .hero .eyebrow {
+    font-size: 0.57rem;
+    flex-wrap: wrap;
+  }
+  .hero-footnote {
+    font-size: 0.68rem;
+  }
+  .hero-bottom {
+    font-size: 0.6rem;
+  }
+  .context-strip small {
+    font-size: 0.62rem;
+  }
+  .section-kicker {
+    font-size: 0.65rem;
+  }
+  .site-header nav a {
+    min-height: 48px;
+  }
+  .site-header nav a[aria-current="location"]::after {
+    width: 28px;
+    right: auto;
+    bottom: 2px;
+  }
+  .search-label input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .form-grid input,
+  .form-grid select,
+  .form-grid textarea {
+    font-size: 16px;
+  }
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+  .filter-buttons button {
+    font-size: 0.7rem;
+  }
+  .direct-contact {
+    gap: 0.8rem;
+  }
+  .direct-email {
+    font-size: 0.88rem;
+  }
+  .footer-bottom {
+    font-size: 0.62rem;
+  }
+}
